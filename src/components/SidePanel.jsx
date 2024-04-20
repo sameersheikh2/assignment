@@ -40,18 +40,22 @@ const SidePanel = ({ isMenuOpen, setIsMenuOpen }) => {
         </Link>
       </ul>
       <div>
-        <button
-          className="bg-white mx-1 text-black px-4 py-3 text-sm font-semibold rounded-md  hover:bg-[#ff6600] transition-colors duration-200 ease-in hover:text-white "
-          type="button"
-        >
-          Contact Us
-        </button>
-        <button
-          className="bg-white mx-1 text-black p-3 text-sm font-semibold rounded-md  hover:bg-[#ff6600] transition-colors duration-200 ease-in hover:text-white "
-          type="button"
-        >
-          Sign up / login
-        </button>
+        <Link to="/blank">
+          <button
+            className="bg-white mx-1 text-black px-4 py-3 text-sm font-semibold rounded-md  hover:bg-[#ff6600] transition-colors duration-200 ease-in hover:text-white "
+            type="button"
+          >
+            Contact Us
+          </button>
+        </Link>
+        <Link to="/blank">
+          <button
+            className="bg-white mx-1 text-black p-3 text-sm font-semibold rounded-md  hover:bg-[#ff6600] transition-colors duration-200 ease-in hover:text-white "
+            type="button"
+          >
+            Sign up / login
+          </button>
+        </Link>
       </div>
     </div>
   );
